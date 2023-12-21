@@ -1,0 +1,46 @@
+.image{
+  width: 750px;
+}
+.p1{
+  padding-top: 50px;
+  padding-left: 200px;
+  padding-bottom: 100px;
+  height: 200px;
+  width: 1000px;
+  display: flex;
+}
+.text{
+  padding: 100px;
+  padding-top: 50px;
+  text-align: justify;
+}
+.imag{
+  position: inherit;
+}
+.p2{
+  height: auto;
+  width: 1000px;
+  padding-left: 250px;
+  text-align: justify;
+  padding-bottom: 50px;
+}
+.p3{
+  padding: 50px;
+  background-color: grey;
+  width: 1400px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+	gap: 35px;
+}
+.class_img{
+  float: left;
+  margin-right: 30px;
+}
+.class_img .p{
+  text-align: justify;
+}
+.h1
+{
+  text-align: center;
+}

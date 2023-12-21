@@ -1,0 +1,61 @@
+<mat-toolbar color="black" class="mat-elevation-z8">
+  <span><img  src="https://www.gprec.ac.in/wp-content/uploads/2019/05/gprec_logo1.png" width="125" height="auto"></span>
+  <div class="spacer"></div>
+  <div class="example-button-row">
+    <a> <button mat-fab extended color="accent" routerLink="home">
+      <mat-icon>home</mat-icon>
+      Home
+    </button></a>
+    <a><button mat-fab extended color="accent" routerLink="aboutus">
+      <mat-icon>location_city</mat-icon>
+      About us
+    </button></a>
+  <a><button mat-fab extended color="accent" [matMenuTriggerFor]="menu" routerLink="departments" >
+      <mat-icon>menu</mat-icon>
+      Departments
+    </button></a>
+    <a mat-fab extended color="accent" routerLink="examcell">
+      <mat-icon>school</mat-icon>
+      Exam Cell
+    </a>
+    <a mat-fab extended color="accent" routerLink="payment">
+      <mat-icon>account_balance</mat-icon>
+      Payment
+    </a>
+    <a mat-fab extended color="accent" href="http://127.0.0.1:5000">
+      <mat-icon>group</mat-icon>
+      Student Login
+    </a>
+  </div>
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+  <a><button mat-menu-item routerLink="civ">
+    <span>Civil Engineering (CIV)</span>
+  </button></a>
+<a><button mat-menu-item routerLink="eee">
+    <span>Electrical and Electronics Engineering (EEE)</span>
+  </button></a>
+<a><button mat-menu-item routerLink="mec">
+    <span>Mechanical Engineering (MEC)</span>
+  </button></a>
+<a><button mat-menu-item routerLink="ece">
+    <span>Electronics and Communication Engineering (ECE)</span>
+  </button></a>
+<a><button mat-menu-item routerLink="cse">
+    <span>Computer Science and Engineering (CSE)</span>
+  </button></a>
+<a><button mat-menu-item routerLink="cst">
+    <span>Computer Science and Technology (CST)</span>
+  </button></a>
+<a><button mat-menu-item routerLink="csbs">
+    <span>Computer Science and Business Systems (CSBS)</span>
+  </button></a>
+<a><button mat-menu-item routerLink="csm">
+    <span>CSE - Artificial Intelligence & Machine Learning (CSM)</span>
+  </button></a>
+<a><button mat-menu-item routerLink="csd">
+    <span>CSE - Data Science (CSD)</span>
+  </button></a>
+</mat-menu>
+

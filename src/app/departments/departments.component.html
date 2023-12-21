@@ -1,0 +1,11 @@
+<div class="flip-card" *ngFor="let card of flipCards">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img [src]="card.image" alt="Card Image">
+    </div>
+    <div class="flip-card-back">
+      {{ card.text }}
+      <a><button routerLink="cse">Department</button></a>
+    </div>
+  </div>
+</div>

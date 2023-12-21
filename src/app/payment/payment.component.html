@@ -1,0 +1,148 @@
+<!--div class="container">
+    <h1>Fee Payments</h1>
+    <div class="fee-options">
+        <div class="fee-option">
+            <h2>Tuition Fee</h2>
+            <p>Pay your tuition fee here.</p>
+            <a routerLink="/tuition-fee">Pay Now</a>
+        </div>
+        <div class="fee-option">
+            <h2>Exam Fee</h2>
+            <p>Pay your end exam fee here.</p>
+            <a routerLink="/exam-fee">Pay Now</a>
+        </div>
+        <div class="fee-option">
+            <h2>Hostel Fee (Boys)</h2>
+            <p>Pay your hostel fee (boys) here.</p>
+            <a routerLink="/hostel-fee-boys">Pay Now</a>
+        </div>
+        <div class="fee-option">
+            <h2>Hostel Fee (Girls)</h2>
+            <p>Pay your hostel fee (girls) here.</p>
+            <a routerLink="/hostel-fee-girls">Pay Now</a>
+        </div>
+        <div class="fee-option">
+            <h2>TnP Fee</h2>
+            <p>Pay your Training and Placement fee here.</p>
+            <a routerLink="/tnp-fee">Pay Now</a>
+        </div>
+    </div>
+    <div class="contact-info">
+        <h3>Contact for Queries</h3>
+        <div class="contact-option">
+            <h4>Tuition Fee</h4>
+            <p>Email: contact-tuition@university.edu</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="contact-option">
+            <h4>Exam Fee</h4>
+            <p>Email: contact-exam@university.edu</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="contact-option">
+            <h4>Hostel Fee (Boys)</h4>
+            <p>Email: contact-hostel-boys@university.edu</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="contact-option">
+            <h4>Hostel Fee (Girls)</h4>
+            <p>Email: contact-hostel-girls@university.edu</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="contact-option">
+            <h4>TnP Fee</h4>
+            <p>Email: contact-tnp@university.edu</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+    </div>
+</div>
+<h1><strong>Payments Page</strong></h1>
+<div class="container">
+    <div class="fee-options">
+        <div class="fee-option">
+            <h2><strong>Tuition Fee</strong></h2>
+            <p>Pay your tuition fee here.</p>
+            <a routerLink="/paying" class="btn">Pay Now</a>
+        </div>
+        <div class="fee-option">
+            <h2><strong>Exam Fee</strong></h2>
+            <p>Pay your end exam fee here.</p>
+            <a routerLink="/paying" class="btn">Pay Now</a>
+        </div>
+        <div class="fee-option">
+            <h2><strong>Hostel Fee (Boys)</strong></h2>
+            <p>Pay your hostel fee (boys) here.</p>
+            <a routerLink="/paying" class="btn">Pay Now</a>
+        </div>
+        <div class="fee-option">
+            <h2><strong>Hostel Fee (Girls)</strong></h2>
+            <p>Pay your hostel fee (girls) here.</p>
+            <a routerLink="/paying" class="btn">Pay Now</a>
+        </div>
+        <div class="fee-option">
+            <h2><strong>TnP Fee</strong></h2>
+            <p>Pay your Training and Placement fee here.</p>
+            <a routerLink="/paying" class="btn">Pay Now</a>
+        </div>
+    </div>
+    <div class="contact-info">
+        <h2><strong>Contact for Queries</strong></h2>
+        <div class="contact-option">
+            <h4><strong>Tuition Fee</strong></h4>
+            <p>Email: contact-tuition@university.edu</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="contact-option">
+            <h4><strong>Exam Fee</strong></h4>
+            <p>Email: contact-exam@university.edu</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="contact-option">
+            <h4><strong>Hostel Fee (Boys)</strong></h4>
+            <p>Email: contact-hostel-boys@university.edu</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="contact-option">
+            <h4><strong>Hostel Fee (Girls)</strong></h4>
+            <p>Email: contact-hostel-girls@university.edu</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="contact-option">
+            <h4><strong>TnP Fee</strong></h4>
+            <p>Email: contact-tnp@university.edu</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+    </div>
+</div>-->
+<form class="checkout-form" [formGroup]="paymentForm">
+
+    <input type="text" formControlName="name" placeholder="Name"/>
+    <input type="text" formControlName="email" placeholder="Email">
+    <input type="number" formControlName="amount" placeholder="Amount"/>
+  
+    <div class="stripe-card" ngxStripeCardGroup [elementsOptions]="elementsOptions">
+      <h4>Enter payment details</h4>
+  
+      <div class="stripe-element">
+        <ngx-stripe-card-number
+          [options]="cardOptions"
+          [elementsOptions]="elementsOptions"
+        ></ngx-stripe-card-number>
+      </div>
+  
+      <div fxLayout="row" fxLayoutGap="10px">
+        <div class="w-full stripe-element">
+          <ngx-stripe-card-expiry
+            [options]="cardOptions"
+          ></ngx-stripe-card-expiry>
+        </div>
+        <div class="w-full stripe-element">
+          <ngx-stripe-card-cvc
+            [options]="cardOptions"
+          ></ngx-stripe-card-cvc>
+        </div>
+      </div>
+    </div>
+  
+    <button type="submit" (click)="pay (payment_method)">Submit Payment</button>
+  </form>

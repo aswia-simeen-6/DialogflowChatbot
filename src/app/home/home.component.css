@@ -1,0 +1,87 @@
+/*.homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+  h2 {
+    background: linear-gradient(45deg, #aa00a2, #000000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: capitalize;
+    letter-spacing: 0.8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
+  }
+
+
+
+.left-column,
+.right-column {
+  flex: 1;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 25px;
+}
+
+.right-column img {
+  width: 1200px;
+  height: 500px;
+  perspective: 1000px;
+  transform: rotateY(20deg); /* Adjust the rotation angle for the 3D effect 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+*/
+.homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+hr {
+  border: none;
+  height: 5px; /* Adjust the height as needed */
+  background: linear-gradient(45deg, #aa006c, #000000);
+  transform: rotateY(20deg); /* Adjust the rotation angle for the 3D effect */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  margin: 10px 0; /* Adjust the margin as needed */
+}
+
+h2 {
+  background: linear-gradient(45deg, #aa006c, #000000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: capitalize;
+  letter-spacing: 0.04em; /* Adjust the letter spacing as needed */
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: clamp(2rem, 3rem, 4rem); /* Adjust the font size as needed */
+  
+  line-height: 1.2; /* Adjust the line height as needed */
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  max-height: 1000px;
+}
+
+.right-column img {
+  width: 1050px;
+  height: 500px;
+  perspective: 1000px;
+  transform: rotateY(20deg); /* Adjust the rotation angle for the 3D effect */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.chat{
+  position: absolute;
+  padding-left: 1100px;
+  padding-top: 50px;
+}

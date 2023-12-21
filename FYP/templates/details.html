@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .profile {
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+        }
+        table {
+            width: 100%;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        img {
+            max-width: 100px; /* Adjust the size of your college logo */
+            display: block;
+            margin: 0 auto 20px;
+        }
+    </style>
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+
+</head>
+<body>
+    
+    <div class="profile" style="margin-top: 100px;">
+        <img src="{{url_for('static',filename='images/GPREC.jpg')}}" alt="College Logo"> <!-- Insert the path to your college logo -->
+        <h1>Student Profile</h1>
+        <table>
+            <tr>
+                <th>Field</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;">Name</td>
+                <td>{{ details[0] }}</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;">Roll Number</td>
+                <td>{{ details[1] }}</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;">Section</td>
+                <td>{{ details[2] }}</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;">Period Of Study</td>
+                <td>{{ details[3] }}</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;">Scheme</td>
+                <td>{{ details[4] }}</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;">Email</td>
+                <td>{{ details[5] }}</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;">Phone</td>
+                <td>{{ details[6] }}</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;">CGPA</td>
+                <td>{{ details[7] }}</td>
+            </tr>
+        </table>
+    </div>
+    <div >
+        <a href="http://localhost:4200/home" class="btn btn-danger" style="text-decoration: none;">Go Home</a>
+    </div>
+</body>
+</html>
