@@ -6,8 +6,12 @@
   }
   
   .container {
-	min-height: 100vh;
-	position: relative;
+	height: 300px;
+	width: 100%;
+	position: sticky;
+	display: block;
+	bottom: 0;
+	left: 0;
   }
   
   .footer {
@@ -16,7 +20,7 @@
 	background: black;
 	color: #ffffff;
 	display: flex;
-	position: absolute;
+	position: sticky;
 	bottom: 0;
 	left: 0;
   }
@@ -70,6 +74,8 @@
   .fa-regular {
 	color: #F28C28;
 	float: left;
+	transform: scale(1.5,1.5);
+	padding: 10px;
   }
   
   .bottom {
