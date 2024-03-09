@@ -6,7 +6,6 @@ import { AdmissionsComponent } from './admissions/admissions.component';
 import { DepartmentsComponent } from './departments/departments.component';
 import { ExamcellComponent } from './examcell/examcell.component';
 import { LoginComponent } from './login/login.component';
-import { PaymentComponent } from './payment/payment.component';
 import { CivComponent } from './civ/civ.component';
 import { EeeComponent } from './eee/eee.component';
 import { MecComponent } from './mec/mec.component';
@@ -17,6 +16,7 @@ import { CsmComponent } from './csm/csm.component';
 import { CsdComponent } from './csd/csd.component';
 import { HbsComponent } from './hbs/hbs.component';
 import { PayingComponent } from './paying/paying.component';
+import { EceComponent } from './ece/ece.component';
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
@@ -24,12 +24,11 @@ const routes: Routes = [
   {path:'admissions', component: AdmissionsComponent},
   {path:'departments', component: DepartmentsComponent},
   {path:'examcell', component: ExamcellComponent},
-  {path:'payment', component: PaymentComponent},
   {path:'login', component: LoginComponent},
   {path:'civ', component: CivComponent},
   {path:'eee', component: EeeComponent},
   {path:'mec', component: MecComponent},
-  {path:'ece', component: EeeComponent},
+  {path:'ece', component: EceComponent},
   {path:'cse', component: CseComponent},
   {path:'cst', component: CstComponent},
   {path:'csbs', component: CsbsComponent},

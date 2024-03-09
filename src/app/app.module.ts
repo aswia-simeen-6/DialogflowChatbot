@@ -14,7 +14,6 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { AdmissionsComponent } from './admissions/admissions.component';
 import { DepartmentsComponent } from './departments/departments.component';
 import { ExamcellComponent } from './examcell/examcell.component';
-import { PaymentComponent } from './payment/payment.component';
 import { LoginComponent } from './login/login.component';
 import { CivComponent } from './civ/civ.component';
 import { EeeComponent } from './eee/eee.component';
@@ -31,7 +30,7 @@ import { ChatbotComponent } from './chatbot/chatbot.component';
 import { PayingComponent } from './paying/paying.component';
 import { NgxStripeModule } from 'ngx-stripe';
 import { environment } from './environment';
-import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +40,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     AdmissionsComponent,
     DepartmentsComponent,
     ExamcellComponent,
-    PaymentComponent,
     LoginComponent,
     CivComponent,
     EeeComponent,
