@@ -30,6 +30,7 @@ import { ChatbotComponent } from './chatbot/chatbot.component';
 import { PayingComponent } from './paying/paying.component';
 import { NgxStripeModule } from 'ngx-stripe';
 import { environment } from './environment';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { environment } from './environment';
     HbsComponent,
     FooterComponent,
     ChatbotComponent,
-    PayingComponent
+    PayingComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

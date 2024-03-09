@@ -17,6 +17,7 @@ import { CsdComponent } from './csd/csd.component';
 import { HbsComponent } from './hbs/hbs.component';
 import { PayingComponent } from './paying/paying.component';
 import { EceComponent } from './ece/ece.component';
+import { SliderComponent } from './slider/slider.component';
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
