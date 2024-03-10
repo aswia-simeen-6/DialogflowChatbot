@@ -31,7 +31,8 @@ import { PayingComponent } from './paying/paying.component';
 import { NgxStripeModule } from 'ngx-stripe';
 import { environment } from './environment';
 import { SliderComponent } from './slider/slider.component';
-
+import { AccordionButtonComponent } from './accordion-button/accordion-button.component';
+import { HomeContentComponent } from './home-content/home-content.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,7 +56,9 @@ import { SliderComponent } from './slider/slider.component';
     FooterComponent,
     ChatbotComponent,
     PayingComponent,
-    SliderComponent
+    SliderComponent,
+    AccordionButtonComponent,
+    HomeContentComponent
   ],
   imports: [
     BrowserModule,

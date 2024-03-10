@@ -1,0 +1,29 @@
+.accordion {
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 30px;
+    width: 40%;
+  }
+  
+  .accordion-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .accordion-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 20px;
+  }
+  
+  .accordion-body {
+    padding: 10px;
+    width: 50%;
+  }
+  
+  .content{
+    display: flex;
+  }
