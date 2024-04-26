@@ -33,6 +33,8 @@ import { environment } from './environment';
 import { SliderComponent } from './slider/slider.component';
 import { AccordionButtonComponent } from './accordion-button/accordion-button.component';
 import { HomeContentComponent } from './home-content/home-content.component';
+import { WhygprecComponent } from './whygprec/whygprec.component';
+import { PaymentComponent } from './payment/payment.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +60,10 @@ import { HomeContentComponent } from './home-content/home-content.component';
     PayingComponent,
     SliderComponent,
     AccordionButtonComponent,
-    HomeContentComponent
+    HomeContentComponent,
+    WhygprecComponent,
+    PayingComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
@@ -69,6 +74,7 @@ import { HomeContentComponent } from './home-content/home-content.component';
     MatButtonModule,
     MatMenuModule,
     MatCardModule,
+    
     NgxStripeModule.forRoot(environment.stripe.publicKey)
   ],
   providers: [],

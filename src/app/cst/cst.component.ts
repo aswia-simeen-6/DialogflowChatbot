@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./cst.component.css']
 })
 export class CstComponent {
-  showDiv1: boolean = false;
+  showDiv1: boolean = true;
 showDiv2: boolean = false;
 showDiv3: boolean = false;
 showDiv4: boolean = false;

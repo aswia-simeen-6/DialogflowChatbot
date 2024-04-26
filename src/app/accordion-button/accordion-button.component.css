@@ -6,9 +6,11 @@
   }
   
   .accordion-header {
-    background-color: #f0f0f0;
-    padding: 10px;
+    background-color: orange;
+    padding: 5px;
     cursor: pointer;
+    box-shadow: 5px 5px 5px grey;
+    text-align: center;
   }
   
   .accordion-button {
@@ -17,6 +19,8 @@
     outline: none;
     cursor: pointer;
     margin: 20px;
+    color: white;
+    font-size: 15px;
   }
   
   .accordion-body {

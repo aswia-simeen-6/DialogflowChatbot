@@ -1,0 +1,139 @@
+
+  
+  .formdiv{
+    margin-top: 100px;
+    width: 70%;
+    margin-left: 225px;
+    margin-right: 250px;
+    
+    height: 650px;
+    margin-bottom: 100px;
+    box-shadow: 5px solid rgb(141, 139, 139);
+    display: flex;
+    border: 2px solid black;
+  }
+
+  .rightcolumn{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: white;
+  }
+
+  .leftcolumn{
+    width: 400px;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: grey;
+  }
+
+  .leftcolumn img{
+    height: inherit;
+    width: inherit;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+
+  input[type="text"], input[type="number"]{
+    width: 80%;
+    padding: auto;
+    height: 40px;
+    border-radius: 25px;
+    padding: 5px;
+  }
+
+
+   
+  input[type="text"]::placeholder, input[type="number"]::placeholder{
+      font-size: 17px;
+      padding-left: 10px;
+  }
+
+  .form{
+      width: 90%;
+      margin-left: 50px;
+      margin-right: 100px;
+      margin-bottom: 100px;
+      
+  }
+
+  .inputname{
+    display: flex;
+    margin: 30px;
+    
+  }
+
+  .logo{
+    height: max-content;
+    display: flex;
+  }
+
+  .logoicon{
+    margin: 20px
+  }
+
+  .logoicon img{
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+  }
+
+  .logoicon .name{
+      margin-top: 60px;
+  }
+
+  .logoicon .name h3{
+      font-size: 50px;
+  }
+
+  
+  option{
+    padding-left: 10px;
+    margin-top: 5px;
+  }
+
+
+  .inputname1{
+    display: inline;
+    padding-left: 20px;
+  }
+
+  /*select{
+    padding: 30px;
+    margin: 20px;
+    
+    /*color: white;*
+    height: 50px;
+    width: 45%;
+    border: 2px white solid;
+    box-shadow: 5px 5px 5px grey;
+  }*/
+  select {
+    margin-right: 50px;
+    margin-left: 20px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: grey;
+  }
+  select option{
+    font-size: 16px;
+    color: black;
+    background-color: white;
+  }
+
+  button{
+    background-color: gray;
+    color: white;
+    padding: 15px;
+    margin-left: 150px;
+    width: 60%;
+    box-shadow: 5px 5px 5px gray;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+  
+  span:hover{
+    transform: scale(1.2,1.2);
+  }

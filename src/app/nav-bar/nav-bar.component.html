@@ -1,32 +1,33 @@
-<mat-toolbar color="black" class="mat-elevation-z8">
+<mat-toolbar color="black" class="mat-elevation-z8" style="color: orangered;">
   <span><img  src="https://www.gprec.ac.in/wp-content/uploads/2019/05/gprec_logo1.png" width="125" height="auto"></span>
   <div class="spacer"></div>
   <div class="example-button-row">
-    <a> <button mat-fab extended color="accent" routerLink="home">
+    <a> <button mat-fab extended color="warn" routerLink="home">
       <mat-icon>home</mat-icon>
       Home
     </button></a>
-    <a><button mat-fab extended color="accent" routerLink="aboutus">
+    <a><button mat-fab extended color="warn" routerLink="aboutus">
       <mat-icon>location_city</mat-icon>
       About us
     </button></a>
-  <a><button mat-fab extended color="accent" [matMenuTriggerFor]="menu" routerLink="departments" >
+  <a><button mat-fab extended color="warn" [matMenuTriggerFor]="menu" routerLink="departments" >
       <mat-icon>menu</mat-icon>
       Departments
     </button></a>
-    <a mat-fab extended color="accent" routerLink="examcell">
+    <a mat-fab extended color="warn" routerLink="examcell">
       <mat-icon>school</mat-icon>
       Exam Cell
     </a>
-    <a mat-fab extended color="accent" routerLink="payment">
+    <a mat-fab extended color="warn" routerLink="payment">
       <mat-icon>account_balance</mat-icon>
       Payment
     </a>
-    <a mat-fab extended color="accent" href="http://127.0.0.1:5000">
+    <a mat-fab extended color="warn" href="http://127.0.0.1:5000">
       <mat-icon>group</mat-icon>
       Student Login
     </a>
   </div>
+  <span><img src="https://www.gprec.ac.in/wp-content/uploads/codes.png" width="125" height="60"></span>
 </mat-toolbar>
 
 <mat-menu #menu="matMenu">

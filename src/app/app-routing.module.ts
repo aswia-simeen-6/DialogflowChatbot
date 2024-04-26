@@ -17,7 +17,7 @@ import { CsdComponent } from './csd/csd.component';
 import { HbsComponent } from './hbs/hbs.component';
 import { PayingComponent } from './paying/paying.component';
 import { EceComponent } from './ece/ece.component';
-import { SliderComponent } from './slider/slider.component';
+import { PaymentComponent } from './payment/payment.component';
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
@@ -36,7 +36,8 @@ const routes: Routes = [
   {path:'csm', component: CsmComponent},
   {path:'csd', component: CsdComponent},
   {path:'hbs', component: HbsComponent},
-  {path:'paying', component: PayingComponent}
+  {path:'paying', component: PayingComponent},
+  {path: 'payment', component: PaymentComponent}
 ];
 
 @NgModule({

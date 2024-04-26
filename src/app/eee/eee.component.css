@@ -47,3 +47,17 @@ a{
 {
     margin: 20px;
 }
+
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+  }
+
+  th p{
+    font-weight: bold;
+  }
+
+  table{
+    margin-bottom: 20PX;
+  }

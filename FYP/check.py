@@ -3,7 +3,7 @@ connection = pymysql.connect(host='localhost',
                              user='root',
                              password='G#06112002g',
                              database = 'FYP'            
-                             )
+                            )
 cursor = connection.cursor()
 
 # sql="insert into `students` values(%s,%s,%s,%s,%s,%s,%s,%s,%s)"

@@ -4,8 +4,16 @@
       <img [src]="card.image" alt="Card Image">
     </div>
     <div class="flip-card-back">
-      {{ card.text }}
-      <a><button routerLink="cse">Department</button></a>
+      <div class="data">
+        <p>{{ card.text }}</p>
+      </div>
+      
+      <a><button routerLink="../{{card.link}}" style="color: black;">
+        {{card.text}}</button></a>
     </div>
   </div>
 </div>
+
+
+
+
